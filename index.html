@@ -7,26 +7,13 @@
 	<meta name="description" content="Link" />
 
 <body>
-<?php
-/**
- * Created by PhpStorm.
- * User: Azathoth
- * Date: 29. 3. 2016
- * Time: 14:54
- */
-
-$addresses = [
-	'http://www.google.com',
-	'http://www.facebook.com',
-	'http://www.youtube.com'
-];
-
-$size = count($addresses);
-$randomIndex = rand(0, $size - 1);
-$randomUrl = $addresses[$randomIndex];
-
-header('Location: ' . $randomUrl, true, 303);>
-	
+<h1>heelo</h1>
+<script type ="text/javascript">
+   alert('You are being redirected to random website')                            
+   var responses = ["https://www.google.com",    "https://www.youtube.com"]
+   var rand =  responses[Math.floor(Math.random() * responses.length)];
+   window.location.replace(rand)
+</script>
 	
   </script>
 </body>
